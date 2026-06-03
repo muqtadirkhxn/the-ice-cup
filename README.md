@@ -3,7 +3,7 @@
 A modern, responsive frontend web application for a fictional ice cream parlour built using React, Vite, and Tailwind CSS. The project features a visually appealing user interface, responsive layouts, menu browsing, cart functionality, authentication pages, and engaging customer-focused sections.
 
 🌐 Live Demo
-Live Website: https://the-ice-cup.vercel.app (Update after deployment)
+Live Website: https://the-ice-cup.vercel.app
 GitHub Repository: https://github.com/muqtadirkhxn/the-ice-cup
 
 ---
