@@ -165,9 +165,6 @@ Future updates may include:
 
 **Muqtadir Khan**
 
-🎓 MCA Final Year Student  
-💻 Aspiring Full Stack MERN Developer
-
 GitHub:
 https://github.com/muqtadirkhxn
 
