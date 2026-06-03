@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-link {
+  @apply text-gray-700 dark:text-gray-300 hover:text-purple-600 transition;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-slate-950 text-gray-900 dark:text-white;
+  }
+}
+
+@layer utilities {
+  .bg-vanilla {
+    background-color: #fff8f1;
+  }
+  .text-chocolate {
+    color: #4a2c2a;
+  }
+  .bg-strawberry {
+    background-color: #f2a1b3;
+  }
+}
+.bg-strawberry {
+  background-color: #f472b6;
+}
+.text-strawberry {
+  color: #f472b6;
+}
+:root {
+  --bg-footer: #fff8f1; /* vanilla */
+  --text-footer: #4a2c2a; /* chocolate */
+  --muted-footer: #7a5c5a;
+  --border-footer: #e8d9cf;
+
+  --accent-footer: #d4af37; /* gold */
+}
+
+.dark {
+  --bg-footer: #0e0a0a;
+  --text-footer: #f6ede6;
+  --muted-footer: #cbb8ae;
+  --border-footer: #2a1b1a;
+
+  --accent-footer: #f2a1b3; /* strawberry glow in dark */
+}
+
+.footer-link {
+  position: relative;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 0;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.social-btn {
+  padding: 12px;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.dark .social-btn {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-btn:hover {
+  transform: scale(1.15);
+}
+
+:root {
+  --footer-bg: #fff4ee;
+  --footer-text: #3b2a2a;
+  --footer-muted: #8a6f6b;
+  --footer-border: #f1d6cf;
+
+  --footer-accent-start: #ff6fb1;
+  --footer-accent-end: #b65cff;
+}
+
+.dark {
+  --footer-bg: #050b1c;
+  --footer-text: #f5f7ff;
+  --footer-muted: #9aa3c7;
+  --footer-border: #141a33;
+
+  --footer-accent-start: #ff6fb1;
+  --footer-accent-end: #7c7cff;
+}
+
+.footer-link {
+  position: relative;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(
+    90deg,
+    var(--footer-accent-start),
+    var(--footer-accent-end)
+  );
+  transition: width 0.35s ease;
+}
+
+.footer-link:hover::after,
+.footer-active::after {
+  width: 100%;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.35s ease;
+}
+
+.dark .footer-social {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.footer-social:hover {
+  transform: translateY(-4px) scale(1.1);
+  background: linear-gradient(
+    135deg,
+    var(--footer-accent-start),
+    var(--footer-accent-end)
+  );
+  color: white;
+}
